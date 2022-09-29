@@ -10,8 +10,8 @@ esp.osdebug(None)
 gc.collect()
 
 def do_connect():
-    ssid = 'BBG- Aderson'
-    password = 'wyh100208' 
+    ssid = 'REDE'
+    password = '123456789' 
     
     sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():

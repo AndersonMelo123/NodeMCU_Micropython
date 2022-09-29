@@ -12,7 +12,7 @@ print("ID: ", client_id)
 topic_sub = b'notification'
 topic_node = b'node'
 topic_pub = b'iot'
-mqtt_server = '192.168.0.124'
+mqtt_server = '192.168.137.173'
 
 last_message = 0
 message_interval = 1
@@ -83,13 +83,3 @@ while True:
 
     print('Distance:', distance, 'cm')
     time.sleep(1)
-
-# try:
-#    client.check_msg()
-#    if (time.time() - last_message) > message_interval:
-#    msg = b'Hello msg #%d' % counter
-#      client.publish(topic_pub, msg)
-#      last_message = time.time()
-#      counter += 1
-#  except OSError as e:
-#    restart_and_reconnect()
